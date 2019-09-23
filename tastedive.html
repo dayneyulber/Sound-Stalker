@@ -35,6 +35,76 @@
             </ul>
         </div>
     </nav>
+    <div class="container" id="results">
+            <div class="row text-center justify-content-center">
+                <div class="d-flex">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center justify-content-center">
+                <div class="d-flex">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <div class="text-center" >
     <input id="user-input" type="text">
     <input class="text-center" id="submitbtn" type="submit">
@@ -43,7 +113,7 @@
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" link>
 
         $("#submitbtn").on("click", function(){
             var search = $("#user-input").val();
@@ -60,7 +130,6 @@
                 // console.log(results);
                 console.log(search);
                 console.log(response);
-                resultDiv.empty();
                 resultDiv.append("<br><h2 class='text-center'>Search Results</h2><br>");
                 resultDiv.append("Name: " + response.Similar.Info[0].Name + "<br>");
                 resultDiv.append("Type: " + response.Similar.Info[0].Type + "<br>");
@@ -72,8 +141,8 @@
 
 
 
-                for (var i = 0; i < results.length; i++) {
-                    var infoDiv = $("<div>");
+                for (var i = 0; i < 7; i++) {
+                    var infoDiv = $(".card");
                     infoDiv.append("Name: " + results[i].Name + "<br>");
                     infoDiv.append("Type: " + results[i].Type + "<br><br>");
                     resultDiv.append(infoDiv);

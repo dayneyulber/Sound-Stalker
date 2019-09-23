@@ -8,13 +8,13 @@ $("#submitbtn").on("click", function(){
     url: queryURL,
     method: "GET"
     }).then(function(response) {
-        var results = response.Similar.Results
+        var results = Response.Object.Similar.Results
         // console.log(results);
         console.log(search);
         console.log(response);
         $("#results").empty()
 
-        for (var i = 0; i < results.length; i++) {
+        for (var i = 0; i < 7; i++) {
             var infoDiv = $("<div>");
             infoDiv.append("Name: " + results[i].Name + "<br>");
             infoDiv.append("Type: " + results[i].Type + "<br><br>");
