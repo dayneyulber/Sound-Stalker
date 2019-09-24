@@ -6,28 +6,20 @@ body {
     /* background-image: url(../images/space.gif);
     background-repeat: no-repeat;
     background-size: cover; */
-    background-color: black;
+    /* background-image: url("ba2c6672692ff8ad1069f05128800691.jpg"); */
     /* opacity: .7; */
+    background-color: black;
 }
 
 #div1, #div2, #div3 {
-    background-color: white;
     margin-top: 10%;
     height: 500px;
     overflow: auto;
     margin-bottom: 15%;
-}
-
-#div1 {
-    background-color: #747480
-}
-
-#div2 {
-    background-color: #4F4F57;
-}
-
-#div3 {
-    background-color: #3A3A40;
+    background-color: transparent;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    color: whitesmoke;
+    opacity: .9;
 }
 
 .example {
@@ -35,7 +27,7 @@ body {
 }
 
 #navbar-id {
-    background-image: url(../images/space.gif);
+    background-image: url(assets/images/ba2c6672692ff8ad1069f05128800691.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 70px;
