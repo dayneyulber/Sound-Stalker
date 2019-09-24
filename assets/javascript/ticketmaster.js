@@ -25,7 +25,7 @@ function getticketMasterData(artistName) {
         method: "GET"
     }).then(function (response) {
         if (response) { console.log(response); } else { alert("No Response from ticketmaster.."); }
-        document.getElementById("div3").innerHTML = "";
+        document.getElementById("card3").innerHTML = "";
         // Start a for loop to create giph diplay div's with onclick events to start and stop motion.
         var ticketMaster = [];
 
@@ -118,7 +118,7 @@ function getticketMasterData(artistName) {
         )
 
         console.log(ticketMaster);
-        document.getElementById("div3").innerHTML = "<div class='divTitle'>Upcoming Events Related to " + artistName + "</div>";
+        document.getElementById("card3").innerHTML = "<div class='divTitle'>Upcoming Events Related to " + artistName + "</div>";
         for (var e = 0; e < ticketMaster.length; e++) {
             // insert into html page (remove this for final use..)
 
@@ -132,7 +132,7 @@ function getticketMasterData(artistName) {
 </div>
 `
 
-            document.getElementById("div3").innerHTML += divInfo;
+            document.getElementById("card3").innerHTML += divInfo;
         }
 
 
